@@ -34,12 +34,12 @@
     [self.statusItem setHighlightMode:NO];
     [self.statusItem setMenu:self.statusMenu];
     
-    [self updateHeartMeter];
     self.timer = [NSTimer timerWithTimeInterval:5*ONE_MINUTE
                                          target:self
                                        selector:@selector(updateHeartMeter)
                                        userInfo:nil
                                         repeats:YES];
+    [self.timer fire];
 }
 
 -(void)updateHeartMeter
