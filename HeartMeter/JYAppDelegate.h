@@ -11,5 +11,10 @@
 @interface JYAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSMenu *statusMenu;
+@property (weak) IBOutlet NSMenuItem *heartsMenuItem;
+
+@property (strong) NSStatusItem *statusItem;
+@property (strong) NSTimer *timer;
 
 @end
