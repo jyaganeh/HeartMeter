@@ -44,21 +44,27 @@
 
 -(void)updateHeartMeter
 {
-    float numHearts = [self heartsWithPercent:[self batteryPercent]];
+    int batteryPercent = [self batteryPercent];
+    float numHearts = [self heartsWithPercent:batteryPercent];
     
+    // Drop the decimal from the number of hearts to get the first part of the filename
     int n = (int)numHearts;
+    // Decide whether we should show a half heart
     int m = (n == numHearts) ? 0 : 5;
-    NSString *imageName = [NSString stringWithFormat:@"hearts_%d_%d.png", n, m];
     
+    NSString *imageName = [NSString stringWithFormat:@"hearts_%d_%d.png", n, m];
     [self.statusItem setImage:[NSImage imageNamed:imageName]];
+    
     [self.heartsMenuItem setTitle:[NSString stringWithFormat:@"Hearts: %0.1f", numHearts]];
     
-    NSLog(@"Battery Percent: %d, Hearts: %0.1f", [self batteryPercent],numHearts);
+    NSLog(@"Battery Percent: %d, Hearts: %0.1f, Image: %@", batteryPercent, numHearts, imageName);
 }
 
+// Round battery percentage to the nearest 0.5
 -(float)heartsWithPercent:(int)percent
 {
-    return (percent / 10) / 2.0;
+    float hearts = percent / 20.0;
+    return round(hearts * 2.0) / 2.0;
 }
 
 // Source: http://forums.macrumors.com/showpost.php?p=5352544&postcount=2
