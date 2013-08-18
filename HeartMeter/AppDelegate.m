@@ -7,19 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import <IOKit/ps/IOPSKeys.h>
 
 /*
  _TODO_
-
- * Add battery time remaining to dropdown
- * Add option to start on login
- * Indicate charging/discharging
+ * Implement run at login functionality
+ * Visually indicate charging/discharging?
  * Blink when low on hearts?
- * Crop heart images and add retina versions
- * Reformat batteryPercent code so it's not copy-pasta
+ * Add retina heart graphics
 */
 
-#define STATUS_ITEM_LENGTH 94
+#define STATUS_ITEM_LENGTH 84
 #define ONE_MINUTE 60
 
 @implementation AppDelegate
@@ -43,9 +41,22 @@
     [self.timer fire];
 }
 
+/** Toggles whether or not HeartMeter will run automatically at login */
+- (IBAction)toggleStartAtLogin:(id)sender {
+    // TODO: Add/Remove item from autolaunch list
+    NSMenuItem *item = (NSMenuItem *)sender;
+    BOOL toggle = !(item.state == NSOnState);
+    [item setState:(toggle ? NSOnState : NSOffState)];
+}
+
+/** Determine whether or not HeartMeter is currently set to run automatically at login */
+- (BOOL)isStartAtLoginEnabled {
+    // TODO: check to see if app is in autolaunch list
+    return NO;
+}
+
 /** Updates the HeartMeter with the current PowerSourceInfo */
--(void)updateHeartMeter
-{
+- (void)updateHeartMeter {
     PowerSourceInfo *powerSource = [self.powerSourceInfoManager getPowerSourceInfoWithIndex:0];
     
     [self updateStatusItemImageWithHearts:powerSource.percent];
@@ -53,33 +64,44 @@
     [self updateSourceTextWithPowerSource:powerSource];
 }
 
-/** Updates the status bar item image for the given battery percent */
--(void)updateStatusItemImageWithHearts:(int)percent {
-    float numHearts = [self heartsWithPercent:percent];
-    
-    // Drop the decimal from the number of hearts to get the first part of the filename
-    int n = (int)numHearts;
-    // Determine whether or not to show a half heart to get the second part of the filename
-    int m = (n == numHearts) ? 0 : 5;
-    
-    [self.statusItem setImage:[NSImage imageNamed:[NSString stringWithFormat:@"hearts_%d_%d.png", n, m]]];
+/** Updates the status item image for the given battery percent */
+- (void)updateStatusItemImageWithHearts:(int)percent {
+    int roundedPercent = round(percent / 10) * 10;
+    NSString *name = [NSString stringWithFormat:@"hearts_%d.png", roundedPercent];
+    [self.statusItem setImage:[NSImage imageNamed:name]];
 }
 
-/** Updates the 'Status' Menu Item with the current time remaining and battery percentage */
+/** Updates the 'Status' Menu Item with the current time remaining */
 -(void)updateStatusTextWithPowerSource:(PowerSourceInfo*)powerSource {
-    NSString *title = @"";
+    NSString *title;
     if (powerSource.isMinutesRemainingProvided) {
-        int hours = powerSource.minutesRemaining % 60;
-        int minutes = powerSource.minutesRemaining - (powerSource.minutesRemaining % 60);
-        title = [title stringByAppendingFormat:@"%d:%d Remaining ", hours, minutes];
+        if (powerSource.minutesRemaining == -1) {
+            title = @"Calculating Time Remaining...";
+        } else if ([powerSource.type isEqual: @"AC Power"]
+                   && powerSource.percent == 100
+                   && !powerSource.isCharging) {
+            title = @"Battery Is Charged";
+        } else {
+            int hours = powerSource.minutesRemaining / 60;
+            int minutes = powerSource.minutesRemaining % 60;
+            title = [NSString stringWithFormat:@"%d:%02d %@",
+                     hours, minutes, (powerSource.isCharging ? @"Until Full" : @"Remaining")];
+        }
     }
-    title = [title stringByAppendingFormat:@"(%d%%)", powerSource.percent];
     [self.menuItemStatus setTitle:title];
 }
 
 /** Updates the 'Power Source' Menu Item with the current power source type */
 -(void)updateSourceTextWithPowerSource:(PowerSourceInfo*)powerSource {
-    [self.menuItemSource setTitle:[NSString stringWithFormat:@"Power Source: %@", powerSource.type]];
+    NSString *title;
+    if ([powerSource.type isEqualToString:@kIOPSBatteryPowerValue]) {
+        title = @"Battery";
+    } else if ([powerSource.type isEqualToString:@kIOPSACPowerValue]) {
+        title = @"Power Adapter";
+    } else {
+        title = powerSource.type;
+    }
+    [self.menuItemSource setTitle:[NSString stringWithFormat:@"Power Source: %@", title]];
 }
 
 /** Rounds battery percentage to the nearest 0.5 */

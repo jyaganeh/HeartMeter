@@ -1,3 +1,7 @@
 .DS_Store
-HeartMeter.xcodeproj/xcuserdata
-HeartMeter.xcodeproj/project.xcworkspace/xcuserdata
+*.swp
+*~.nib
+build/
+*.pbxuser
+xcuserdata
+.idea

@@ -14,6 +14,7 @@
 @property (weak) IBOutlet NSMenu *statusMenu;
 @property (weak) IBOutlet NSMenuItem *menuItemStatus;
 @property (weak) IBOutlet NSMenuItem *menuItemSource;
+@property (weak) IBOutlet NSMenuItem *menuItemStartAtLogin;
 
 @property (strong) NSStatusItem *statusItem;
 @property (strong) NSTimer *timer;
