@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0314487F17C0443500F68CFC /* hearts_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487417C0443500F68CFC /* hearts_0.png */; };
-		0314488017C0443500F68CFC /* hearts_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487517C0443500F68CFC /* hearts_10.png */; };
-		0314488117C0443500F68CFC /* hearts_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487617C0443500F68CFC /* hearts_20.png */; };
-		0314488217C0443500F68CFC /* hearts_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487717C0443500F68CFC /* hearts_30.png */; };
-		0314488317C0443500F68CFC /* hearts_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487817C0443500F68CFC /* hearts_40.png */; };
-		0314488417C0443500F68CFC /* hearts_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487917C0443500F68CFC /* hearts_50.png */; };
-		0314488517C0443500F68CFC /* hearts_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487A17C0443500F68CFC /* hearts_60.png */; };
-		0314488617C0443500F68CFC /* hearts_70.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487B17C0443500F68CFC /* hearts_70.png */; };
-		0314488717C0443500F68CFC /* hearts_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487C17C0443500F68CFC /* hearts_80.png */; };
-		0314488817C0443500F68CFC /* hearts_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487D17C0443500F68CFC /* hearts_90.png */; };
-		0314488917C0443500F68CFC /* hearts_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 0314487E17C0443500F68CFC /* hearts_100.png */; };
 		032BDC1E17C01D43002D69B0 /* PowerSourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BDC1D17C01D43002D69B0 /* PowerSourceInfo.m */; };
 		0364847517BDCF15004B2EE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364847417BDCF15004B2EE7 /* Cocoa.framework */; };
 		0364847F17BDCF15004B2EE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0364847D17BDCF15004B2EE7 /* InfoPlist.strings */; };
@@ -26,21 +15,38 @@
 		0364848817BDCF15004B2EE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0364848717BDCF15004B2EE7 /* AppDelegate.m */; };
 		0364848B17BDCF16004B2EE7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0364848917BDCF16004B2EE7 /* MainMenu.xib */; };
 		0364849217BDE016004B2EE7 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364849117BDE016004B2EE7 /* IOKit.framework */; };
+		03D0D61817C055F8005D71C9 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D0D61717C055F7005D71C9 /* Sparkle.framework */; };
+		03D0D61A17C05666005D71C9 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03D0D61717C055F7005D71C9 /* Sparkle.framework */; };
+		03E410C017C0591400527EF0 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 03E410B317C0591400527EF0 /* dsa_pub.pem */; };
+		03E410C117C0591400527EF0 /* hearts_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410B517C0591400527EF0 /* hearts_0.png */; };
+		03E410C217C0591400527EF0 /* hearts_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410B617C0591400527EF0 /* hearts_10.png */; };
+		03E410C317C0591400527EF0 /* hearts_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410B717C0591400527EF0 /* hearts_100.png */; };
+		03E410C417C0591400527EF0 /* hearts_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410B817C0591400527EF0 /* hearts_20.png */; };
+		03E410C517C0591400527EF0 /* hearts_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410B917C0591400527EF0 /* hearts_30.png */; };
+		03E410C617C0591400527EF0 /* hearts_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BA17C0591400527EF0 /* hearts_40.png */; };
+		03E410C717C0591400527EF0 /* hearts_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BB17C0591400527EF0 /* hearts_50.png */; };
+		03E410C817C0591400527EF0 /* hearts_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BC17C0591400527EF0 /* hearts_60.png */; };
+		03E410C917C0591400527EF0 /* hearts_70.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BD17C0591400527EF0 /* hearts_70.png */; };
+		03E410CA17C0591400527EF0 /* hearts_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BE17C0591400527EF0 /* hearts_80.png */; };
+		03E410CB17C0591400527EF0 /* hearts_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BF17C0591400527EF0 /* hearts_90.png */; };
+		03E410CF17C05B7900527EF0 /* icon_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410CE17C05B7900527EF0 /* icon_512x512.png */; };
 		31DE546DE01C7126A27EDFFD /* PowerSourceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE50BF2DC17C70C7772C9E /* PowerSourceInfoManager.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		03D0D61917C0564F005D71C9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03D0D61A17C05666005D71C9 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0314487417C0443500F68CFC /* hearts_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_0.png; sourceTree = "<group>"; };
-		0314487517C0443500F68CFC /* hearts_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_10.png; sourceTree = "<group>"; };
-		0314487617C0443500F68CFC /* hearts_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_20.png; sourceTree = "<group>"; };
-		0314487717C0443500F68CFC /* hearts_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_30.png; sourceTree = "<group>"; };
-		0314487817C0443500F68CFC /* hearts_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_40.png; sourceTree = "<group>"; };
-		0314487917C0443500F68CFC /* hearts_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_50.png; sourceTree = "<group>"; };
-		0314487A17C0443500F68CFC /* hearts_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_60.png; sourceTree = "<group>"; };
-		0314487B17C0443500F68CFC /* hearts_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_70.png; sourceTree = "<group>"; };
-		0314487C17C0443500F68CFC /* hearts_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_80.png; sourceTree = "<group>"; };
-		0314487D17C0443500F68CFC /* hearts_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_90.png; sourceTree = "<group>"; };
-		0314487E17C0443500F68CFC /* hearts_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_100.png; sourceTree = "<group>"; };
 		032BDC1C17C01D43002D69B0 /* PowerSourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSourceInfo.h; sourceTree = "<group>"; };
 		032BDC1D17C01D43002D69B0 /* PowerSourceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSourceInfo.m; sourceTree = "<group>"; };
 		0364847117BDCF15004B2EE7 /* HeartMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +63,20 @@
 		0364848717BDCF15004B2EE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0364848A17BDCF16004B2EE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0364849117BDE016004B2EE7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		03D0D61717C055F7005D71C9 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		03E410B317C0591400527EF0 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		03E410B517C0591400527EF0 /* hearts_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_0.png; sourceTree = "<group>"; };
+		03E410B617C0591400527EF0 /* hearts_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_10.png; sourceTree = "<group>"; };
+		03E410B717C0591400527EF0 /* hearts_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_100.png; sourceTree = "<group>"; };
+		03E410B817C0591400527EF0 /* hearts_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_20.png; sourceTree = "<group>"; };
+		03E410B917C0591400527EF0 /* hearts_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_30.png; sourceTree = "<group>"; };
+		03E410BA17C0591400527EF0 /* hearts_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_40.png; sourceTree = "<group>"; };
+		03E410BB17C0591400527EF0 /* hearts_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_50.png; sourceTree = "<group>"; };
+		03E410BC17C0591400527EF0 /* hearts_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_60.png; sourceTree = "<group>"; };
+		03E410BD17C0591400527EF0 /* hearts_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_70.png; sourceTree = "<group>"; };
+		03E410BE17C0591400527EF0 /* hearts_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_80.png; sourceTree = "<group>"; };
+		03E410BF17C0591400527EF0 /* hearts_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_90.png; sourceTree = "<group>"; };
+		03E410CE17C05B7900527EF0 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_512x512.png; path = HeartMeter/resources/images/icon_512x512.png; sourceTree = "<group>"; };
 		31DE50BF2DC17C70C7772C9E /* PowerSourceInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSourceInfoManager.m; sourceTree = "<group>"; };
 		31DE5CDD63FDD1C4F2F4756B /* PowerSourceInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSourceInfoManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +88,7 @@
 			files = (
 				0364849217BDE016004B2EE7 /* IOKit.framework in Frameworks */,
 				0364847517BDCF15004B2EE7 /* Cocoa.framework in Frameworks */,
+				03D0D61817C055F8005D71C9 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +98,7 @@
 		0364846817BDCF15004B2EE7 = {
 			isa = PBXGroup;
 			children = (
+				03E410CE17C05B7900527EF0 /* icon_512x512.png */,
 				0364847A17BDCF15004B2EE7 /* HeartMeter */,
 				0364847317BDCF15004B2EE7 /* Frameworks */,
 				0364847217BDCF15004B2EE7 /* Products */,
@@ -94,6 +116,7 @@
 		0364847317BDCF15004B2EE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03D0D61717C055F7005D71C9 /* Sparkle.framework */,
 				0364849117BDE016004B2EE7 /* IOKit.framework */,
 				0364847417BDCF15004B2EE7 /* Cocoa.framework */,
 				0364847617BDCF15004B2EE7 /* Other Frameworks */,
@@ -121,7 +144,7 @@
 				032BDC1C17C01D43002D69B0 /* PowerSourceInfo.h */,
 				032BDC1D17C01D43002D69B0 /* PowerSourceInfo.m */,
 				0364848917BDCF16004B2EE7 /* MainMenu.xib */,
-				0364849317BEBC69004B2EE7 /* images */,
+				03E410B217C0591400527EF0 /* Resources */,
 				0364847B17BDCF15004B2EE7 /* Supporting Files */,
 			);
 			path = HeartMeter;
@@ -139,21 +162,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0364849317BEBC69004B2EE7 /* images */ = {
+		03E410B217C0591400527EF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0314487417C0443500F68CFC /* hearts_0.png */,
-				0314487517C0443500F68CFC /* hearts_10.png */,
-				0314487617C0443500F68CFC /* hearts_20.png */,
-				0314487717C0443500F68CFC /* hearts_30.png */,
-				0314487817C0443500F68CFC /* hearts_40.png */,
-				0314487917C0443500F68CFC /* hearts_50.png */,
-				0314487A17C0443500F68CFC /* hearts_60.png */,
-				0314487B17C0443500F68CFC /* hearts_70.png */,
-				0314487C17C0443500F68CFC /* hearts_80.png */,
-				0314487D17C0443500F68CFC /* hearts_90.png */,
-				0314487E17C0443500F68CFC /* hearts_100.png */,
+				03E410B317C0591400527EF0 /* dsa_pub.pem */,
+				03E410B417C0591400527EF0 /* Images */,
 			);
+			name = Resources;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		03E410B417C0591400527EF0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				03E410B517C0591400527EF0 /* hearts_0.png */,
+				03E410B617C0591400527EF0 /* hearts_10.png */,
+				03E410B717C0591400527EF0 /* hearts_100.png */,
+				03E410B817C0591400527EF0 /* hearts_20.png */,
+				03E410B917C0591400527EF0 /* hearts_30.png */,
+				03E410BA17C0591400527EF0 /* hearts_40.png */,
+				03E410BB17C0591400527EF0 /* hearts_50.png */,
+				03E410BC17C0591400527EF0 /* hearts_60.png */,
+				03E410BD17C0591400527EF0 /* hearts_70.png */,
+				03E410BE17C0591400527EF0 /* hearts_80.png */,
+				03E410BF17C0591400527EF0 /* hearts_90.png */,
+			);
+			name = Images;
 			path = images;
 			sourceTree = "<group>";
 		};
@@ -167,6 +201,7 @@
 				0364846D17BDCF15004B2EE7 /* Sources */,
 				0364846E17BDCF15004B2EE7 /* Frameworks */,
 				0364846F17BDCF15004B2EE7 /* Resources */,
+				03D0D61917C0564F005D71C9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -209,20 +244,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0314487F17C0443500F68CFC /* hearts_0.png in Resources */,
-				0314488017C0443500F68CFC /* hearts_10.png in Resources */,
-				0314488117C0443500F68CFC /* hearts_20.png in Resources */,
-				0314488217C0443500F68CFC /* hearts_30.png in Resources */,
-				0314488317C0443500F68CFC /* hearts_40.png in Resources */,
-				0314488417C0443500F68CFC /* hearts_50.png in Resources */,
-				0314488517C0443500F68CFC /* hearts_60.png in Resources */,
-				0314488617C0443500F68CFC /* hearts_70.png in Resources */,
-				0314488717C0443500F68CFC /* hearts_80.png in Resources */,
-				0314488817C0443500F68CFC /* hearts_90.png in Resources */,
-				0314488917C0443500F68CFC /* hearts_100.png in Resources */,
 				0364847F17BDCF15004B2EE7 /* InfoPlist.strings in Resources */,
 				0364848517BDCF15004B2EE7 /* Credits.rtf in Resources */,
 				0364848B17BDCF16004B2EE7 /* MainMenu.xib in Resources */,
+				03E410C017C0591400527EF0 /* dsa_pub.pem in Resources */,
+				03E410C117C0591400527EF0 /* hearts_0.png in Resources */,
+				03E410C217C0591400527EF0 /* hearts_10.png in Resources */,
+				03E410C317C0591400527EF0 /* hearts_100.png in Resources */,
+				03E410C417C0591400527EF0 /* hearts_20.png in Resources */,
+				03E410C517C0591400527EF0 /* hearts_30.png in Resources */,
+				03E410C617C0591400527EF0 /* hearts_40.png in Resources */,
+				03E410C717C0591400527EF0 /* hearts_50.png in Resources */,
+				03E410C817C0591400527EF0 /* hearts_60.png in Resources */,
+				03E410C917C0591400527EF0 /* hearts_70.png in Resources */,
+				03E410CA17C0591400527EF0 /* hearts_80.png in Resources */,
+				03E410CB17C0591400527EF0 /* hearts_90.png in Resources */,
+				03E410CF17C05B7900527EF0 /* icon_512x512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,9 +370,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartMeter/HeartMeter-Prefix.pch";
 				INFOPLIST_FILE = "HeartMeter/HeartMeter-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -345,9 +387,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartMeter/HeartMeter-Prefix.pch";
 				INFOPLIST_FILE = "HeartMeter/HeartMeter-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
