@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		032BDC1E17C01D43002D69B0 /* PowerSourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 032BDC1D17C01D43002D69B0 /* PowerSourceInfo.m */; };
+		0348730517C27D040010AB7A /* HeartMeter.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 0348730417C27D040010AB7A /* HeartMeter.iconset */; };
 		0364847517BDCF15004B2EE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364847417BDCF15004B2EE7 /* Cocoa.framework */; };
 		0364847F17BDCF15004B2EE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0364847D17BDCF15004B2EE7 /* InfoPlist.strings */; };
 		0364848117BDCF15004B2EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0364848017BDCF15004B2EE7 /* main.m */; };
@@ -29,7 +30,7 @@
 		03E410C917C0591400527EF0 /* hearts_70.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BD17C0591400527EF0 /* hearts_70.png */; };
 		03E410CA17C0591400527EF0 /* hearts_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BE17C0591400527EF0 /* hearts_80.png */; };
 		03E410CB17C0591400527EF0 /* hearts_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410BF17C0591400527EF0 /* hearts_90.png */; };
-		03E410CF17C05B7900527EF0 /* icon_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E410CE17C05B7900527EF0 /* icon_512x512.png */; };
+		03E410D217C0A0D500527EF0 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E410D117C0A0D500527EF0 /* LaunchAtLoginController.m */; };
 		31DE546DE01C7126A27EDFFD /* PowerSourceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE50BF2DC17C70C7772C9E /* PowerSourceInfoManager.m */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		032BDC1C17C01D43002D69B0 /* PowerSourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSourceInfo.h; sourceTree = "<group>"; };
 		032BDC1D17C01D43002D69B0 /* PowerSourceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSourceInfo.m; sourceTree = "<group>"; };
+		0348730417C27D040010AB7A /* HeartMeter.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = HeartMeter.iconset; path = ../../HeartMeter.iconset; sourceTree = "<group>"; };
 		0364847117BDCF15004B2EE7 /* HeartMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0364847417BDCF15004B2EE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0364847717BDCF15004B2EE7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -76,7 +78,8 @@
 		03E410BD17C0591400527EF0 /* hearts_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_70.png; sourceTree = "<group>"; };
 		03E410BE17C0591400527EF0 /* hearts_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_80.png; sourceTree = "<group>"; };
 		03E410BF17C0591400527EF0 /* hearts_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts_90.png; sourceTree = "<group>"; };
-		03E410CE17C05B7900527EF0 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_512x512.png; path = HeartMeter/resources/images/icon_512x512.png; sourceTree = "<group>"; };
+		03E410D017C0A0D500527EF0 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		03E410D117C0A0D500527EF0 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
 		31DE50BF2DC17C70C7772C9E /* PowerSourceInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSourceInfoManager.m; sourceTree = "<group>"; };
 		31DE5CDD63FDD1C4F2F4756B /* PowerSourceInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSourceInfoManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +101,6 @@
 		0364846817BDCF15004B2EE7 = {
 			isa = PBXGroup;
 			children = (
-				03E410CE17C05B7900527EF0 /* icon_512x512.png */,
 				0364847A17BDCF15004B2EE7 /* HeartMeter */,
 				0364847317BDCF15004B2EE7 /* Frameworks */,
 				0364847217BDCF15004B2EE7 /* Products */,
@@ -138,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				0364848617BDCF15004B2EE7 /* AppDelegate.h */,
+				03E410D017C0A0D500527EF0 /* LaunchAtLoginController.h */,
+				03E410D117C0A0D500527EF0 /* LaunchAtLoginController.m */,
 				0364848717BDCF15004B2EE7 /* AppDelegate.m */,
 				31DE5CDD63FDD1C4F2F4756B /* PowerSourceInfoManager.h */,
 				31DE50BF2DC17C70C7772C9E /* PowerSourceInfoManager.m */,
@@ -165,6 +169,7 @@
 		03E410B217C0591400527EF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0348730417C27D040010AB7A /* HeartMeter.iconset */,
 				03E410B317C0591400527EF0 /* dsa_pub.pem */,
 				03E410B417C0591400527EF0 /* Images */,
 			);
@@ -259,7 +264,7 @@
 				03E410C917C0591400527EF0 /* hearts_70.png in Resources */,
 				03E410CA17C0591400527EF0 /* hearts_80.png in Resources */,
 				03E410CB17C0591400527EF0 /* hearts_90.png in Resources */,
-				03E410CF17C05B7900527EF0 /* icon_512x512.png in Resources */,
+				0348730517C27D040010AB7A /* HeartMeter.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +279,7 @@
 				0364848817BDCF15004B2EE7 /* AppDelegate.m in Sources */,
 				032BDC1E17C01D43002D69B0 /* PowerSourceInfo.m in Sources */,
 				31DE546DE01C7126A27EDFFD /* PowerSourceInfoManager.m in Sources */,
+				03E410D217C0A0D500527EF0 /* LaunchAtLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

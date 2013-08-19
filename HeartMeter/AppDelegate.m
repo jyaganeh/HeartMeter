@@ -8,13 +8,13 @@
 
 #import "AppDelegate.h"
 #import <IOKit/ps/IOPSKeys.h>
+#import "LaunchAtLoginController.h"
 
 /*
  _TODO_
- * Implement run at login functionality
+ * Add retina heart graphics
  * Visually indicate charging/discharging?
  * Blink when low on hearts?
- * Add retina heart graphics
 */
 
 #define STATUS_ITEM_LENGTH 84
@@ -32,27 +32,29 @@
     // Create an instance of the PowerSourceInfoManager
     self.powerSourceInfoManager = [PowerSourceInfoManager new];
 
+    // Set 'Start at Login' state
+    LaunchAtLoginController *launchController = [LaunchAtLoginController new];
+    BOOL launch = [launchController launchAtLogin];
+    [self.menuItemStartAtLogin setState:(launch ? NSOnState : NSOffState)];
+    
     // Set a timer to periodically update the HeartMeter
-    self.timer = [NSTimer timerWithTimeInterval:5*ONE_MINUTE
+    self.timer = [NSTimer timerWithTimeInterval:ONE_MINUTE
                                          target:self
                                        selector:@selector(updateHeartMeter)
                                        userInfo:nil
                                         repeats:YES];
-    [self.timer fire];
+    
+    [[NSRunLoop currentRunLoop] addTimer:self.timer
+                                 forMode:NSDefaultRunLoopMode];
 }
 
 /** Toggles whether or not HeartMeter will run automatically at login */
 - (IBAction)toggleStartAtLogin:(id)sender {
-    // TODO: Add/Remove item from autolaunch list
     NSMenuItem *item = (NSMenuItem *)sender;
-    BOOL toggle = !(item.state == NSOnState);
-    [item setState:(toggle ? NSOnState : NSOffState)];
-}
-
-/** Determine whether or not HeartMeter is currently set to run automatically at login */
-- (BOOL)isStartAtLoginEnabled {
-    // TODO: check to see if app is in autolaunch list
-    return NO;
+    LaunchAtLoginController *launchController = [LaunchAtLoginController new];
+    BOOL shouldLaunch = ![launchController launchAtLogin];
+    [launchController setLaunchAtLogin:shouldLaunch];
+    [item setState:(shouldLaunch ? NSOnState : NSOffState)];
 }
 
 /** Updates the HeartMeter with the current PowerSourceInfo */
@@ -62,6 +64,8 @@
     [self updateStatusItemImageWithHearts:powerSource.percent];
     [self updateStatusTextWithPowerSource:powerSource];
     [self updateSourceTextWithPowerSource:powerSource];
+    
+    NSLog(@"Updating HeartMeter for %d percent", powerSource.percent);
 }
 
 /** Updates the status item image for the given battery percent */
