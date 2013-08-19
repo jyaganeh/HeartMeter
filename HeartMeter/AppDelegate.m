@@ -46,6 +46,7 @@
     
     [[NSRunLoop currentRunLoop] addTimer:self.timer
                                  forMode:NSDefaultRunLoopMode];
+    [self.timer fire];
 }
 
 /** Toggles whether or not HeartMeter will run automatically at login */
