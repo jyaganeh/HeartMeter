@@ -11,7 +11,6 @@
 		0348730517C27D040010AB7A /* HeartMeter.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 0348730417C27D040010AB7A /* HeartMeter.iconset */; };
 		0348731117C2E8790010AB7A /* hearts_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730617C2E8790010AB7A /* hearts_0@2x.png */; };
 		0348731217C2E8790010AB7A /* hearts_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730717C2E8790010AB7A /* hearts_10@2x.png */; };
-		0348731317C2E8790010AB7A /* hearts_20@x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730817C2E8790010AB7A /* hearts_20@x.png */; };
 		0348731417C2E8790010AB7A /* hearts_30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730917C2E8790010AB7A /* hearts_30@2x.png */; };
 		0348731517C2E8790010AB7A /* hearts_40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730A17C2E8790010AB7A /* hearts_40@2x.png */; };
 		0348731617C2E8790010AB7A /* hearts_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730B17C2E8790010AB7A /* hearts_50@2x.png */; };
@@ -20,6 +19,7 @@
 		0348731917C2E8790010AB7A /* hearts_80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730E17C2E8790010AB7A /* hearts_80@2x.png */; };
 		0348731A17C2E8790010AB7A /* hearts_90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348730F17C2E8790010AB7A /* hearts_90@2x.png */; };
 		0348731B17C2E8790010AB7A /* hearts_100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348731017C2E8790010AB7A /* hearts_100@2x.png */; };
+		0348731D17C2EE160010AB7A /* hearts_20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348731C17C2EE160010AB7A /* hearts_20@2x.png */; };
 		0364847517BDCF15004B2EE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0364847417BDCF15004B2EE7 /* Cocoa.framework */; };
 		0364847F17BDCF15004B2EE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0364847D17BDCF15004B2EE7 /* InfoPlist.strings */; };
 		0364848117BDCF15004B2EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0364848017BDCF15004B2EE7 /* main.m */; };
@@ -64,7 +64,6 @@
 		0348730417C27D040010AB7A /* HeartMeter.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = HeartMeter.iconset; path = ../../HeartMeter.iconset; sourceTree = "<group>"; };
 		0348730617C2E8790010AB7A /* hearts_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_0@2x.png"; sourceTree = "<group>"; };
 		0348730717C2E8790010AB7A /* hearts_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_10@2x.png"; sourceTree = "<group>"; };
-		0348730817C2E8790010AB7A /* hearts_20@x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_20@x.png"; sourceTree = "<group>"; };
 		0348730917C2E8790010AB7A /* hearts_30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_30@2x.png"; sourceTree = "<group>"; };
 		0348730A17C2E8790010AB7A /* hearts_40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_40@2x.png"; sourceTree = "<group>"; };
 		0348730B17C2E8790010AB7A /* hearts_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_50@2x.png"; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		0348730E17C2E8790010AB7A /* hearts_80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_80@2x.png"; sourceTree = "<group>"; };
 		0348730F17C2E8790010AB7A /* hearts_90@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_90@2x.png"; sourceTree = "<group>"; };
 		0348731017C2E8790010AB7A /* hearts_100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_100@2x.png"; sourceTree = "<group>"; };
+		0348731C17C2EE160010AB7A /* hearts_20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hearts_20@2x.png"; sourceTree = "<group>"; };
 		0364847117BDCF15004B2EE7 /* HeartMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0364847417BDCF15004B2EE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0364847717BDCF15004B2EE7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -204,7 +204,7 @@
 			children = (
 				0348730617C2E8790010AB7A /* hearts_0@2x.png */,
 				0348730717C2E8790010AB7A /* hearts_10@2x.png */,
-				0348730817C2E8790010AB7A /* hearts_20@x.png */,
+				0348731C17C2EE160010AB7A /* hearts_20@2x.png */,
 				0348730917C2E8790010AB7A /* hearts_30@2x.png */,
 				0348730A17C2E8790010AB7A /* hearts_40@2x.png */,
 				0348730B17C2E8790010AB7A /* hearts_50@2x.png */,
@@ -300,7 +300,6 @@
 				0348730517C27D040010AB7A /* HeartMeter.iconset in Resources */,
 				0348731117C2E8790010AB7A /* hearts_0@2x.png in Resources */,
 				0348731217C2E8790010AB7A /* hearts_10@2x.png in Resources */,
-				0348731317C2E8790010AB7A /* hearts_20@x.png in Resources */,
 				0348731417C2E8790010AB7A /* hearts_30@2x.png in Resources */,
 				0348731517C2E8790010AB7A /* hearts_40@2x.png in Resources */,
 				0348731617C2E8790010AB7A /* hearts_50@2x.png in Resources */,
@@ -309,6 +308,7 @@
 				0348731917C2E8790010AB7A /* hearts_80@2x.png in Resources */,
 				0348731A17C2E8790010AB7A /* hearts_90@2x.png in Resources */,
 				0348731B17C2E8790010AB7A /* hearts_100@2x.png in Resources */,
+				0348731D17C2EE160010AB7A /* hearts_20@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

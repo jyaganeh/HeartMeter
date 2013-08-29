@@ -10,13 +10,6 @@
 #import <IOKit/ps/IOPSKeys.h>
 #import "LaunchAtLoginController.h"
 
-/*
- _TODO_
- * Add retina heart graphics
- * Visually indicate charging/discharging?
- * Blink when low on hearts?
-*/
-
 #define STATUS_ITEM_LENGTH 84
 #define ONE_MINUTE 60
 
@@ -65,14 +58,12 @@
     [self updateStatusItemImageWithHearts:powerSource.percent];
     [self updateStatusTextWithPowerSource:powerSource];
     [self updateSourceTextWithPowerSource:powerSource];
-    
-    NSLog(@"Updating HeartMeter for %d percent", powerSource.percent);
 }
 
 /** Updates the status item image for the given battery percent */
 - (void)updateStatusItemImageWithHearts:(int)percent {
     int roundedPercent = round(percent / 10) * 10;
-    NSString *name = [NSString stringWithFormat:@"hearts_%d.png", roundedPercent];
+    NSString *name = [NSString stringWithFormat:@"hearts_%d", roundedPercent];
     [self.statusItem setImage:[NSImage imageNamed:name]];
 }
 
